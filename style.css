@@ -27,6 +27,15 @@ header{
     gap: 10px;
     background-color: var(--fundoheader);
     padding: 10px;
+    flex-direction: row;
+    justify-content:space-around;
+}
+#esq{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 1000px;
 }
 #perfil{
     border-radius: 100%;
@@ -40,9 +49,6 @@ header{
 .headernav:hover{
     color: rgb(0, 0, 0);
     text-decoration: underline;
-}
-header nav{
-    padding-left: 450px;
 }
 header nav:hover{
     color: #0000;
@@ -58,7 +64,7 @@ section{
     margin-top: 50px;
     padding: 1vw;
     text-align:justify;
-    width: 40vw;
+    max-width: 70vw;
     margin-bottom: 50px;
 }
 section h1{
@@ -90,6 +96,8 @@ aside h1{
     display: flex;
     align-items: center;
     gap: 50px;
+    justify-content: space-around;
+    margin: 0px 20px 20px 20px;
 }
 .automacao{
     background-color: #658583;
