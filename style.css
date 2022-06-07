@@ -1,22 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    text-decoration: none;
 }
 :root {
-    --titulo: #deb887;
-    --fundoheader: #809A6F;
-    --fundobody: #A25B5B;
-    --fundoprojetos: #374B4A;
+    --titulo: #ffff;
+    --fundoheader: #000;
+    --fundobody: #ffff;
+    --fundoprojetos: #297373;
 
 
-    --fonttitle: 'Source Code Pro', monospace , arial , sans-serif;
+    --fonttitle: 'Ubuntu', sans-serif , arial;
     --fontp: 'Open Sans', sans-serif , monospace , arial
-  }
-  
-a{
-    text-decoration: none;
 }
 body{
     background-color: var(--fundobody);
@@ -43,37 +40,39 @@ header{
 }
 .headernav{
     text-decoration: none;
-    padding-left: 30px;
     color:var(--titulo);
+    margin-left: 1.5rem;
 }
 .headernav:hover{
-    color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.582);
     text-decoration: underline;
 }
 header nav:hover{
     color: #0000;
 }
 header h1{
-    font-family: 'Source Code Pro', monospace;
-    color:var(--titulo)
+    font-family: var(--fonttitle);
+    color:var(--titulo);
+    font-variant: small-caps;
+    letter-spacing: 2px;
 }
 section{
-    background-color: white;
-    border: #809A6F solid;
     margin: auto;
     margin-top: 50px;
     padding: 1vw;
     text-align:justify;
-    max-width: 70vw;
+    width: 40vw;
     margin-bottom: 50px;
+    background-color: #374b4a2c;
 }
 section h1{
-    font-family: 'Source Code Pro', monospace;
+    font-family: var(--fonttitle);  
     text-align: center;
 }
 section h2{
-    color: #848a44;
-    text-decoration: underline;
+    font-family: var(--fonttitle);
+    font-variant: small-caps;
+    color: #000000;
     text-align: center;
 }
 section p{
@@ -84,23 +83,24 @@ section p{
 }
 aside{
     background-color: var(--fundoprojetos);
+    margin-top: 10vw;
 }
 aside h1{
     text-align: center;
     padding: 30px;
     font-family: var(--fonttitle);
     color: var(--fundoheader);
-    text-decoration: underline;
 }
 #projects{
     display: flex;
     align-items: center;
-    gap: 50px;
+    flex-wrap: wrap;
     justify-content: space-around;
-    margin: 0px 20px 20px 20px;
+    margin: 0px 20px 0px 20px;
+    padding-bottom: 50px;
 }
 .automacao{
-    background-color: #658583;
+    background-color:#39393A;
     width: 300px;
     border-radius: 8px;
     padding: 10px;
@@ -117,4 +117,9 @@ aside h1{
     border-radius: 1000px;
     height: 250px;
     width: 250px;
+    background-size: cover;
+}
+footer{
+    background-color:var(--fundoheader);
+    padding: 15px;
 }
