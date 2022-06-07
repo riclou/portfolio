@@ -122,4 +122,12 @@ aside h1{
 footer{
     background-color:var(--fundoheader);
     padding: 15px;
+    text-align: center;
+    color:#ffff
+}
+footer a{
+    color: #ffff;
+}
+footer a:hover{
+    text-decoration: underline;
 }
