@@ -61,7 +61,7 @@ main{
     margin-top: 50px;
     padding: 1vw;
     text-align:justify;
-    width: 40vw;
+    max-width: 30rem;
     margin-bottom: 50px;
     background-color: #374b4a2c;
 }
