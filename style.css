@@ -9,7 +9,7 @@
     --titulo: #ffff;
     --fundoheader: #000;
     --fundobody: #ffff;
-    --fundoprojetos: #297373;
+    --fundoprojetos: #2941AB;
 
 
     --fonttitle: 'Ubuntu', sans-serif , arial;
@@ -56,7 +56,7 @@ header h1{
     font-variant: small-caps;
     letter-spacing: 2px;
 }
-section{
+main{
     margin: auto;
     margin-top: 50px;
     padding: 1vw;
@@ -65,31 +65,33 @@ section{
     margin-bottom: 50px;
     background-color: #374b4a2c;
 }
-section h1{
+main h1{
     font-family: var(--fonttitle);  
     text-align: center;
 }
-section h2{
+main h2{
     font-family: var(--fonttitle);
     font-variant: small-caps;
     color: #000000;
     text-align: center;
 }
-section p{
+main p{
     margin-top: 10px;
     text-indent: 10px;
     font-family: 'Open Sans', sans-serif;
     line-height: 25px;
 }
-aside{
+section{
     background-color: var(--fundoprojetos);
     margin-top: 10vw;
+    border: solid 2px rgba(0, 0, 0, 0.37);
+    
 }
-aside h1{
+section h1{
     text-align: center;
     padding: 30px;
     font-family: var(--fonttitle);
-    color: var(--fundoheader);
+    color: #1ed760;
 }
 #projects{
     display: flex;
@@ -98,11 +100,16 @@ aside h1{
     justify-content: space-around;
     margin: 0px 20px 0px 20px;
     padding-bottom: 50px;
+
+}
+.automacao p{
+    padding-bottom: 20px;
+    font-family: var(--fontp);
+    font-size:20px;
+    color: #000;
 }
 .automacao{
-    background-color:#39393A;
     width: 300px;
-    border-radius: 8px;
     padding: 10px;
     text-align: center;
     transition: 200ms;
@@ -114,10 +121,46 @@ aside h1{
     transform: translateY(-10px);
 }
 .imgproj{
-    border-radius: 1000px;
+    border-radius: 10px;
     height: 250px;
     width: 250px;
     background-size: cover;
+}
+.skill{
+    margin: 0px;
+    border: solid 2px rgba(0, 0, 0, 0.37);
+}
+.aling{
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.box{
+    padding: 5px 0px 30px 0px;
+    text-align: center;
+
+}
+.box p{
+    margin-bottom: 10px;
+    font-family: var(--fontp);
+    font-size: larger;
+}
+.box img{
+    height: 10vw;
+}
+.box button{
+    margin-top: 10px;
+    height: 3rem;
+    width: 4rem;
+    border-radius: 10px;
+    transition: 200ms;
+    font-size:large;
+}
+button:hover{
+    transform:translate(10px);
 }
 footer{
     background-color:var(--fundoheader);
